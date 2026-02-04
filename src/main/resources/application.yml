@@ -10,9 +10,9 @@ ncanode:
   crl:
     enabled: ${NCANODE_CRL_ENABLED:true}
     ttl: ${NCANODE_CRL_TTL:1440}
-    url: ${NCANODE_CRL_URL:https://crl.pki.gov.kz/nca_rsa_2022.crl https://crl.pki.gov.kz/nca_gost_2022.crl}
+    url: ${NCANODE_CRL_URL:http://crl.pki.gov.kz/nca_rsa_2022.crl http://crl.pki.gov.kz/nca_gost_2022.crl}
     delta:
-      url: ${NCANODE_CRL_DELTA_URL:https://crl.pki.gov.kz/nca_d_rsa_2022.crl https://crl.pki.gov.kz/nca_d_gost_2022.crl}
+      url: ${NCANODE_CRL_DELTA_URL:http://crl.pki.gov.kz/nca_d_rsa_2022.crl http://crl.pki.gov.kz/nca_d_gost_2022.crl}
       ttl: ${NCANODE_CRL_DELTA_TTL:60}
   http-client:
     connectionTtl: ${NCANODE_HTTP_CLIENT_CONNECTION_TTL:10}
@@ -24,7 +24,7 @@ ncanode:
   ocsp:
     url: ${NCANODE_OCSP_URL:http://ocsp.pki.gov.kz/}
   ca:
-    url: ${NCANODE_CA_URL:https://pki.gov.kz/cert/nca_rsa.crt https://pki.gov.kz/cert/nca_gost.crt https://pki.gov.kz/cert/root_gost_2022.cer https://root.gov.kz/cert/root_gost_2020.cer https://root.gov.kz/cert/root_rsa_2020.cer https://pki.gov.kz/cert/nca_gost_2022.cer}
+    url: ${NCANODE_CA_URL:http://pki.gov.kz/cert/nca_rsa.crt http://pki.gov.kz/cert/nca_gost.crt http://pki.gov.kz/cert/root_gost_2022.cer http://root.gov.kz/cert/root_gost_2020.cer http://root.gov.kz/cert/root_rsa_2020.cer http://pki.gov.kz/cert/nca_gost_2022.cer}
     ttl: ${NCANODE_CA_TTL:1440}
     crl:
       enabled: ${NCANODE_CA_CRL_ENABLED:true}
